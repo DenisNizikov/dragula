@@ -119,10 +119,10 @@ function dragula (initialContainers, options) {
     if (!_grabbed) {
       return;
     }
-    if (whichMouseButton(e) === 0) {
-      release({});
-      return; // when text is selected on an input and then dragged, mouseup doesn't fire. this is our only hope
-    }
+    // if (whichMouseButton(e) === 0) {
+    //   release({});
+    //   return; // when text is selected on an input and then dragged, mouseup doesn't fire. this is our only hope
+    // }
     // truthy check fixes #239, equality fixes #207
     if (e.clientX !== void 0 && e.clientX === _moveX && e.clientY !== void 0 && e.clientY === _moveY) {
       return;
